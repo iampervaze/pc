@@ -1,3 +1,11 @@
 .form-group {
     margin-bottom: 8px;
 }
+
+.form-group .ng-valid {
+    border-left: 3px solid var(--bs-success);
+}
+
+.form-group .ng-invalid {
+    border-left: 3px solid var(--bs-danger);
+}

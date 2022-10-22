@@ -12,7 +12,6 @@ namespace PremiumCalculator.Web.Services
             occupationRepository = _occupationRepository;
         }
 
-
         public async Task<Premium> CalculateInsurancePremiumAsync(Customer customer)
         {
             var occupationRating = await occupationRepository.GetOccupationRatingAsync(customer.OccupationId);
@@ -29,7 +28,6 @@ namespace PremiumCalculator.Web.Services
 
             return premium;
         }
-
 
         private uint GetAgeInYears(DateTime dob)
         {

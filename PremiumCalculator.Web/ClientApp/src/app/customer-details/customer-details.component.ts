@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { debounceTime, Observable } from 'rxjs';
 import { Occupation, Customer } from '../models';
 import { OccupationService } from '../services/occupation.service';
-import { PremiumService } from '../services/premium.service';
 
 @Component({
   selector: 'app-customer-details',
@@ -34,6 +33,10 @@ export class CustomerDetailsComponent implements OnInit {
   }
 
   submit() {
+    if(this.form.invalid){
+      return;
+    }
+
     this.customerDetailsSubmitted.next(this.form.value);
   }
 }

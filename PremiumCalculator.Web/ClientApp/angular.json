@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/bootstrap-override.min.css",
               "src/styles.css"
             ],
             "scripts": []
