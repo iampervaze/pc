@@ -1,4 +1,4 @@
-﻿namespace PremiumCalculator.Web
+﻿namespace PremiumCalculator.Web.Enums
 {
     public enum OccupationRating
     {

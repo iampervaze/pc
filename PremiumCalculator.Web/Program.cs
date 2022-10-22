@@ -1,5 +1,7 @@
 using PremiumCalculator.Web.Abstractions.Repository;
+using PremiumCalculator.Web.Abstractions.Services;
 using PremiumCalculator.Web.Repository;
+using PremiumCalculator.Web.Services;
 
 namespace PremiumCalculator.Web
 {
@@ -15,6 +17,9 @@ namespace PremiumCalculator.Web
 
             //repositories
             services.AddSingleton<IOccupationRepository, OccupationRepository>();
+
+            //services
+            services.AddSingleton<IPremiumCalculatorService, PremiumCalculatorService>();
 
             var app = builder.Build();
 

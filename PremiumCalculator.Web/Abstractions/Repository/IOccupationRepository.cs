@@ -1,4 +1,5 @@
-﻿using PremiumCalculator.Web.Models;
+﻿using PremiumCalculator.Web.Enums;
+using PremiumCalculator.Web.Models;
 
 namespace PremiumCalculator.Web.Abstractions.Repository
 {

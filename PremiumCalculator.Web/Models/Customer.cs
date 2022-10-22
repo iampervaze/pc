@@ -3,9 +3,9 @@
     public class Customer
     {
         public string Name { get; set;}
-        public int Age { get; set; }
-        public DateOnly DateOfBirth { get; set; }
+        public uint Age { get; set; }
+        public DateTime DateOfBirth { get; set; }
         public int OccupationId { get; set; }
-        public decimal SumInsured { get; set; }
+        public double SumInsured { get; set; }
     }
 }

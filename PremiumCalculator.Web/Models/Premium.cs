@@ -3,6 +3,6 @@
     public class Premium
     {
         public Customer Customer { get; set; }
-        public decimal InsurancePremium { get; set; }
+        public double InsurancePremium { get; set; }
     }
 }
