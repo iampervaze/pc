@@ -1,3 +1,6 @@
+using PremiumCalculator.Web.Abstractions.Repository;
+using PremiumCalculator.Web.Repository;
+
 namespace PremiumCalculator.Web
 {
     public class Program
@@ -7,8 +10,11 @@ namespace PremiumCalculator.Web
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            var services = builder.Services;
+            services.AddControllersWithViews();
 
-            builder.Services.AddControllersWithViews();
+            //repositories
+            services.AddSingleton<IOccupationRepository, OccupationRepository>();
 
             var app = builder.Build();
 

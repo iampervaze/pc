@@ -6,6 +6,6 @@ namespace PremiumCalculator.Web.Abstractions.Repository
     {
         Task<List<Occupation>> GetOccupationsAsync();
         Task<OccupationRating> GetOccupationRatingAsync(int occupationId);
-        Task<decimal> GetOccupationRatingFactorAsync(OccupationRating rating);
+        Task<double> GetOccupationRatingFactorAsync(OccupationRating rating);
     }
 }
