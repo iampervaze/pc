@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { CommonModule } from '@angular/common';
 import { PremiumDetailsComponent } from './premium-details/premium-details.component';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PremiumDetailsComponent } from './premium-details/premium-details.compo
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-    ])
+    ]),
+    NgbDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
